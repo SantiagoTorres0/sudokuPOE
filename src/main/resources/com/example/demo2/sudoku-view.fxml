@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo2.controller.SudokuController"
+      alignment="CENTER"
+      spacing="10">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <GridPane fx:id="sudokuGrid"
+              alignment="CENTER"
+              hgap="4"
+              vgap="4"/>
+    <Button fx:id="HelpButton" onAction="onHandleHelp">Help</Button>
+
+</VBox>
