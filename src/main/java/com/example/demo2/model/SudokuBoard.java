@@ -1,7 +1,4 @@
 package com.example.demo2.model;
-
-import javafx.fxml.FXML;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
