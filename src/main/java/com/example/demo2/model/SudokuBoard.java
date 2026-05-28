@@ -132,7 +132,7 @@ public class SudokuBoard {
     }
 
     /**
-     * CReates an arregement from 1-6 using fisher yates algorithm (basically this algoritm takes the last element form the arrangment, chooses a random partner, the taken element included, to swap positions with, it does it till it reaches the first element of the arrangment).
+     * CReates an arregement from 1-6 using fisher-yates algorithm (basically this algoritm takes the last element form the arrangment, chooses a random partner, the taken element included, to swap positions with, it does it till it reaches the first element of the arrangment).
      *
      * @return arrangment mixed with numbers from 1 to 6
      */
@@ -198,24 +198,24 @@ public class SudokuBoard {
     }
 
     // -------------------------------------------------------
-    // Validación
+    // Validation
     // -------------------------------------------------------
 
     /**
-     * Verifica si un número puede colocarse en una celda de un mapa dado.
+     * verifies if a number can be placed in a specified map position .
      *
-     * <p>Valida las tres reglas del Sudoku:</p>
+     * <p>validates the three sudoku rules:</p>
      * <ul>
-     *     <li>El número no debe existir en la misma fila.</li>
-     *     <li>El número no debe existir en la misma columna.</li>
-     *     <li>El número no debe existir en el mismo bloque 2×3.</li>
+     *     <li>number shall not exist in the same row.</li>
+     *     <li>number shall not exist on the same column.</li>
+     *     <li>number shall not exist on the current 3x2 block.</li>
      * </ul>
      *
-     * @param map    el mapa donde se verificará el número
-     * @param row    fila donde se colocará el número
-     * @param column columna donde se colocará el número
-     * @param number número a validar
-     * @return {@code true} si el número puede colocarse
+     * @param map    map where number will be verified 
+     * @param row    row where number will be placed 
+     * @param column where the number will be placed
+     * @param number number to validate 
+     * @return {@code true} if number is placeable 
      */
     public boolean canPlaceInMap(Map<String, Integer> map, int row, int column, int number) {
         if (!isValidPosition(row, column)) return false;
